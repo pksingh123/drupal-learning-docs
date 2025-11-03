@@ -44,12 +44,8 @@ function Counter() {
 ```
 # useEffect()	
 #Used to perform side effects — actions that affect something outside the component (like fetching data, timers, or DOM updates).
-# Why Used
-#Fetch data from an API
-#Set up subscriptions or timers
-#Update the DOM manually
-
 # Example:
+```jsx
 import React, { useState, useEffect } from 'react';
 
 function Timer() {
@@ -62,9 +58,39 @@ function Timer() {
 
   return <p>Seconds passed: {seconds}</p>;
 }
+```
+# Why Used
+#Fetch data from an API
+#Set up subscriptions or timers
+#Update the DOM manually
 
 # useContext()	
-Accesses global data from React Context
+#Used to access global data shared via React Context.
+# Example
+```jsx
+import React, { createContext, useContext } from 'react';
+
+const ThemeContext = createContext('light');
+
+function DisplayTheme() {
+  const theme = useContext(ThemeContext);
+  return <p>Current theme: {theme}</p>;
+}
+
+function App() {
+  return (
+    <ThemeContext.Provider value="dark">
+      <DisplayTheme />
+    </ThemeContext.Provider>
+  );
+}
+```
+# Why Used
+When you need to access shared/global data like:
+Current user info
+Theme (light/dark mode)
+Language or app settings
+
 # useRef()	
 Accesses or stores DOM elements and values between renders
 # useMemo()	
