@@ -21,7 +21,7 @@ function Counter() {
     </div>
   );
 }
-
+```
 # List of hooks
 
 # useState()	
