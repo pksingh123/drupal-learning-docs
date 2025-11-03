@@ -28,6 +28,7 @@ function Counter() {
 #Adds state to a functional component
 # Example
 
+```jsx
 import React, { useState } from 'react';
 
 function Counter() {
@@ -40,7 +41,7 @@ function Counter() {
     </div>
   );
 }
-
+```
 # useEffect()	
 #Used to perform side effects — actions that affect something outside the component (like fetching data, timers, or DOM updates).
 # Why Used
