@@ -1,4 +1,4 @@
-#Initialise databaseConnect object
+#Initialise databaseConnect object 
 $database = \Drupal::database();
 # Db Select: db select query used for fetch reacord from table
 $database->select('tableName','tableAlias')->fields('tableAlias')->condition('id', $id)->execute()->fetchObject();
