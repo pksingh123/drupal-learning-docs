@@ -2,6 +2,7 @@
 Hooks are functions that allow functional components to manage state, perform side effects, and use React features.
 
 # Example: 
+```jsx
 import React, { useState, useEffect } from 'react';
 
 function Counter() {
